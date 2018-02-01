@@ -109,8 +109,7 @@
     if ([self.delegate respondsToSelector:@selector(paginationAPI)]) {
         ELPagingAPI *api = [self.delegate paginationAPI];
         api.dataReceiver = self;
-        api.pageIndex = ++self.page;
-        [api requestData];
+        [api requestNextPage];
     }
 }
 

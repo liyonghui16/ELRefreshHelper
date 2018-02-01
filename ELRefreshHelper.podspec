@@ -8,36 +8,15 @@
 
 Pod::Spec.new do |s|
   s.name             = 'ELRefreshHelper'
-  s.version          = '0.0.1'
+  s.version          = '0.0.2'
   s.summary          = 'refresh page helper based MJRefresh & EOLNetworking.'
-
-# This description is used to generate tags and improve search results.
-#   * Think: What does it do? Why did you write it? What is the focus?
-#   * Try to keep it short, snappy and to the point.
-#   * Write the description between the DESC delimiters below.
-#   * Finally, don't worry about the indent, CocoaPods strips it!
-
-  s.description      = <<-DESC
-  快速集成上啦下拉 控制器关心更少的逻辑
-                       DESC
-
   s.homepage         = 'https://github.com/liyonghui16/ELRefreshHelper'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
   s.license          = { :type => 'MIT', :file => 'LICENSE' }
   s.author           = { 'liyonghui16' => '18335103323@163.com' }
-  s.source           = { :git => 'https://github.com/liyonghui16/ELRefreshHelper.git', :tag => "0.0.1" }
-  # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
-
+  s.source           = { :git => 'https://github.com/liyonghui16/ELRefreshHelper.git', :tag => s.version }
   s.ios.deployment_target = '8.0'
-
   s.source_files = 'ELRefreshHelper/Classes/**/*'
-  
-  # s.resource_bundles = {
-  #   'ELRefreshHelper' => ['ELRefreshHelper/Assets/*.png']
-  # }
-
-  # s.public_header_files = 'Pod/Classes/**/*.h'
-  # s.frameworks = 'UIKit', 'MapKit'
   s.dependency 'EOLNetworking', '~> 0.0.10'
   s.dependency 'MJRefresh'
 end
