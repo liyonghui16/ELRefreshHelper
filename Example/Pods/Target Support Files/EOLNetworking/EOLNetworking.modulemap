@@ -1,0 +1,6 @@
+framework module EOLNetworking {
+  umbrella header "EOLNetworking-umbrella.h"
+
+  export *
+  module * { export * }
+}

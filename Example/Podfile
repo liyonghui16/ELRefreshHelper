@@ -1,5 +1,5 @@
-use_frameworks!
-
+#use_frameworks!
+inhibit_all_warnings!
 target 'ELRefreshHelper_Example' do
   pod 'ELRefreshHelper', :path => '../'
 
